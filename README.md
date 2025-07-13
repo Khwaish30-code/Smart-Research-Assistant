@@ -34,8 +34,7 @@ python --version
 
 ```bash
 python -m venv venv
-venv\Scripts\activate       # Windows
-source venv/bin/activate    # Mac/Linux
+venv\Scripts\activate      
 ```
 
 ---
@@ -46,16 +45,14 @@ source venv/bin/activate    # Mac/Linux
 pip install -r requirements.txt
 ```
 
-> ⚠ If `llama-cpp-python` causes issues, **skip it** — you're using **Ollama**, which doesn’t need it.
-
 ---
 
 ### 4. ✅ Install and start **Ollama** (LLaMA engine)
 
 - Download Ollama: https://ollama.com/download
-- Pull LLaMA 3 model (8B is recommended):
+- Pull LLaMA 3 model:
   ```bash
-  ollama pull llama3:8b
+  ollama pull llama3
   ```
 - Start the Ollama server:
   ```bash
